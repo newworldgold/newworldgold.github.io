@@ -1,0 +1,131 @@
+.clearfix {
+	clear: both;
+}
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.pager {
+    text-align: center;
+    display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.pager a {
+	cursor: pointer;
+}
+
+.pager a,
+.pager span {
+	/* 按钮内数字 */
+	width: 45px;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, .1);
+	margin-left: -1px;
+	color: #fbc54d;
+	display: inline-block;
+	line-height: 40px;
+	float: left;
+	font-size: 15px;
+	text-decoration: none;
+	margin: 0 2px;
+	border-radius: 6px;
+}
+.pager a:hover{
+	border-color: #fbc54d;
+	color: #fbc54d;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 6px 1px #fbc54d;
+}
+
+.pager span.active {
+	background-color: #fbc54d;
+	color: #fff;
+	border-color: #fbc54d;
+	position: relative;
+	z-index: 1;
+}
+
+.pager .pg-first,
+.pager .pg-prev,
+.pager .pg-next,
+.pager .pg-last {
+	background: transparent url(https://www.coinsnew.world/static/pc/image/page_bg.png)  8px 7px no-repeat;
+}
+
+
+.pager .pg-prev,
+.pager .pg-prev:hover {
+	background-position: 7px -21px;
+}
+
+.pager .pg-next,
+.pager .pg-next:hover {
+	background-position: -21px -21px;
+}
+
+.pager .pg-last,
+.pager .pg-last:hover {
+	background-position: -21px 7px;
+}
+
+.pager .pg-prev[disabled='true'],
+.pager .pg-prev[disabled='true']:hover {
+	cursor: default;
+	background-image: url(https://www.coinsnew.world/static/pc/image/page_bg_true.png);
+}
+
+.pager .pg-next[disabled='true'],
+.pager .pg-next[disabled='true']:hover {
+	cursor: default;
+	background-image: url(https://www.coinsnew.world/static/pc/image/page_bg_true.png);
+}
+.pager .pg-prev[disabled='true']:hover,.pager .pg-next[disabled='true']:hover {
+	box-shadow: none;
+	border: 1px solid #07254c;
+}
+
+
+
+.pager span.els {
+	border-color: transparent;
+}
+
+.pagerHtmlWrap {
+	width: 800px;
+	margin: 30px auto;
+}
+
+.pagerHtmlWrap .cc_cells {
+	width: 100%;
+	height: 35px;
+	padding: 5px 0;
+	border-bottom: 1px #cccccc solid;
+}
+
+.pagerHtmlWrap .cc_cells a {
+	color: #454545;
+	font-size: 14px;
+	line-height: 35px;
+	text-decoration: none;
+}
+
+.pagerHtmlWrap .cc_cells a span {
+	display: inline-block;
+	width: 25%;
+	text-align: left;
+	margin: 0;
+}
