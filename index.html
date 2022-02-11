@@ -799,11 +799,6 @@ Yulbrada </li>
 </div>
 <span>AMOUNT <i class="count">0</i> <i class="unit">Coins</i></span>
 </div>
- <div class="game-price">
-<p>Price:</p>
-<span class="new-price price" lkr="0.00"><strong></strong><i>0.00</i></span>
-
-</div>
 <button class="buy-now"><span>BUY NOW</span><i class="ico"></i></button>
 </div>
 </div>
@@ -1260,34 +1255,7 @@ You can buy with confidence without worrying about your account being banned.
 
 
         $('.home-game').on('click', '.buy-now', function () {
-            if ($('.home-game .customer input').val() == '' || $('.home-game .customer input').val() == 0) {
-                return false;
-            }
-
-            var shopCart;
-            if (localStorage['cart'] && localStorage['cart'] != '') {
-                //存在
-                datas = localStorage['cart']
-                shopCart = JSON.parse(decodeURIComponent(window.atob(localStorage.getItem("cart"))))
-            } else {
-                //不存在
-                shopCart = {}
-                shopCart.list = []
-            }
-            var goods = {}
-            goods.server = $('.select-server ul.current li.active').text()
-            goods.childServer = $('.select-child-server.active ul li.active').text()
-            goods.goods_no = new_goods.one_goods.goods_no
-            goods.num = 1
-            goods.title = new_goods.one_goods.title + ' ' + $('.home-game .customer input').val() + new_goods.one_goods.unit
-            goods.price_num = $('.home-game .customer input').val()
-            goods.img = new_goods.one_goods.images
-            goods.price = $('.home-game .game-price .new-price').attr('lkr')
-            goods.game_sku = 'newworldgold253'
-            goods.max_num = 99999
-            shopCart.list.unshift(goods)
-            localStorage['cart'] = window.btoa(window.encodeURIComponent(JSON.stringify(shopCart)))
-            window.location.href = siteUrl + '/cart'
+            window.location.href = "https://www.mmorpgmall.com/Game/gold/New-World-Coins.html";
         })
 
 
@@ -1348,24 +1316,8 @@ You can buy with confidence without worrying about your account being banned.
 Connecting to online customer service,please wait
 <p>.</p>
 </div>
-<noscript>
-    <a href="javascript:;" rel="nofollow">Chat with us</a>, powered by <a href="javascript:;" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-<script type="text/javascript">
-    var oneall_subdomain = 'wwwmmoahcom';
-    var oa = document.createElement('script');
-    oa.type = 'text/javascript'; oa.async = true;
-    oa.src = '//' + oneall_subdomain + '.api.oneall.com/socialize/library.js';
-    var s = document.getElementsByTagName('script')[0];
- 
-    var callback_uri = 'https://www.coinsnew.world/login/union';
-    var _oneall = _oneall || [];
-    _oneall.push(['social_login', 'set_providers', ['facebook', 'twitter', 'twitch', 'google', 'steam', 'youtube', 'reddit']]);
 
-    _oneall.push(['social_login', 'set_callback_uri', callback_uri]);
-    _oneall.push(['social_login', 'do_render_ui', 'oa_social_login_container']);
-    _oneall.push(['social_login', 'do_render_ui', 'oa_social_signup_container']);
-</script>
+
 <script src="static/js/19038.js" type="text/javascript" defer="defer"></script>
 </body>
 <script type="text/javascript" src="static/js/template.js"></script>
